@@ -189,7 +189,17 @@
                 <div class="skills__skill">Facebook Ads</div>
                 <div class="skills__skill">Java</div>
                 <div class="skills__skill">Python</div>
-                <div class="skills__skill">CCNA</div>
+                <div class="skills__skill">Strong CompTIA understanding</div>
+				<div class="skills__skill">VMWare</div>
+				<div class="skills__skill">Software Installation</div>
+				<div class="skills__skill">Hardware Installation</div>
+				<div class="skills__skill">Microsoft 365</div>
+				<div class="skills__skill">Office 365</div>
+				<div class="skills__skill">Jira</div>
+				<div class="skills__skill">Troubleshooting</div>
+				<div class="skills__skill">Cybersecurity Fundamentals</div>
+				<div class="skills__skill">ITIL4 Knowledge</div>
+				<div class="skills__skill">Cabling</div>
             </div>
           </div>
         </div>
@@ -285,45 +295,43 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
+          <form action="send_mail.php" method="POST" class="contact__form">
+    <div class="contact__form-field">
+        <label class="contact__form-label" for="name">Name</label>
+        <input
+            required
+            placeholder="Enter Your Name"
+            type="text"
+            class="contact__form-input"
+            name="name"
+            id="name"
+        />
+    </div>
+    <div class="contact__form-field">
+        <label class="contact__form-label" for="email">Email</label>
+        <input
+            required
+            placeholder="Enter Your Email"
+            type="email"
+            class="contact__form-input"
+            name="email"
+            id="email"
+        />
+    </div>
+    <div class="contact__form-field">
+        <label class="contact__form-label" for="message">Message</label>
+        <textarea
+            required
+            cols="30"
+            rows="10"
+            class="contact__form-input"
+            placeholder="Enter Your Message"
+            name="message"
+            id="message"
+        ></textarea>
+    </div>
+    <button type="submit" class="btn btn--theme contact__btn">Submit</button>
+</form>
         </div>
       </div>
     </section>
